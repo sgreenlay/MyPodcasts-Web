@@ -1,0 +1,81 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    height : 100%;
+    background : #eee;
+}
+
+body {
+    font-family : Helvetica, sans-serif;
+    font-size : 1.4em;
+    font-weight : 400;
+}
+
+h1 {
+    font-size: 2.0em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+a {
+    font-style : inherit;
+    text-decoration : inherit;
+    color : inherit;
+}
+
+#app {
+    position: relative;
+
+    margin : 1em auto;
+    width : 20em;
+}
+
+.tiles {
+    margin: 12px 0 0 0;
+    list-style: none;
+    line-height: 0;
+}
+
+.tile {
+    margin: 0 0 7px 7px;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background: #ddd;
+    border: 1px #ddd;
+    box-shadow: 0px 0px 2px 1px #bbb;
+}
+
+.tile:hover {
+    border: 1px #ccc;
+    box-shadow: 0px 0px 5px 4px #aaa;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark .tile {
+    background: #222;
+    border: 1px #222;
+    box-shadow: 0px 0px 2px 1px #444;
+}
+
+.dark .tile:hover {
+    border: 1px #555;
+    box-shadow: 0px 0px 5px 4px #555;
+}
+
+/* Smartphone */
+@media (max-width : 480px) {
+    #app {
+        width : auto;
+        padding : 1em;
+    }
+}
